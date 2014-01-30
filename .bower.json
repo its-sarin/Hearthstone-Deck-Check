@@ -1,0 +1,34 @@
+{
+  "name": "hearthstone-cards",
+  "version": "0.2.1",
+  "authors": [
+    "nckgr <nickgoris@gmail.com>"
+  ],
+  "description": "A list of of all existing cards in \"Hearthstone: Heroes of Warcraft\" in JSON format. Including images.",
+  "main": "hearthstone.json",
+  "keywords": [
+    "hearthstone",
+    "deck",
+    "cards",
+    "card"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/nckg/Hearthstone-Cards",
+  "_release": "0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.1",
+    "commit": "945107870db21a984c036ef0e9e09601cbea0ef0"
+  },
+  "_source": "git://github.com/nckg/Hearthstone-Cards.git",
+  "_target": "~0.2.1",
+  "_originalSource": "hearthstone-cards",
+  "_direct": true
+}

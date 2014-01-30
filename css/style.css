@@ -1,0 +1,40 @@
+body { background: #000; font-family: "Helvetica","Arial","sans"; color: #fff }
+h1 { margin-left: 13px }
+#mainContainer { width: 900px; margin: 0 auto }
+.well { left; background: #343434 }
+input { height: 40px; line-height: 1.3em; color: #444; font-size: 1.3em; padding: 6px 12px; border-radius: 4px }
+.col { width: 300px; float: left }
+ul li { color: #fff }
+.ui-helper-hidden-accessible { display: none }
+ul { margin: 0 }
+.ui-autocomplete { width: 319px; left: 229px !important }
+.ui-menu-item { 
+position: relative;
+display: block;
+padding: 10px 15px;
+margin-bottom: -1px;
+background-color: #222222;
+border: 1px solid #282828;
+}
+.ui-menu-item:hover { 
+background: #2a9fd6;
+cursor: pointer;
+border-radius: 4px;
+}
+.ui-menu-item:hover a {
+color: #fff;
+text-decoration: none;
+}
+#decklist { padding: 0; margin: 0; list-style-type: none }
+#decklist li { width: 240px }
+#decklist li a { 
+  font-size: 14px;
+	font-weight: 400;
+	padding: 4px 43px;
+  color: #fff;
+  width: 241px;
+  height: 40px;
+  display: block;
+  background: url(../img/card-unit.png) 0 0 no-repeat;
+}
+#decklist li a:hover { text-decoration: none }

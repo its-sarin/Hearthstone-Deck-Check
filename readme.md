@@ -1,0 +1,3 @@
+Create lists that reflect your decks to keep track of cards and see what you have left in your deck.
+
+A work in progress...
