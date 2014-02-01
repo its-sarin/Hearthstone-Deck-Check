@@ -218,8 +218,10 @@
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
+  cursor: pointer;
 	border: 1px solid #59b4d4;
-	background: #0078a3 url(images/ui-bg_glass_40_0078a3_1x400.png) 50% 50% repeat-x;
+	/*background: #0078a3 url(images/ui-bg_glass_40_0078a3_1x400.png) 50% 50% repeat-x;*/
+	background: #2a9fd6;
 	font-weight: bold;
 	color: #ffffff;
 }
@@ -323,7 +325,7 @@
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url(images/ui-icons_ffffff_256x240.png);
+	/*background-image: url(images/ui-icons_ffffff_256x240.png);*/
 }
 .ui-state-active .ui-icon {
 	background-image: url(images/ui-icons_222222_256x240.png);
@@ -556,5 +558,5 @@
 	background: #cccccc url(images/ui-bg_flat_30_cccccc_40x100.png) 50% 50% repeat-x;
 	opacity: .6;
 	filter: Alpha(Opacity=60);
-	border-radius: 8px;
+	border-radius: 1px;
 }

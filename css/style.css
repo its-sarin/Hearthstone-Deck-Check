@@ -5,36 +5,50 @@ h1 { margin-left: 13px }
 input { height: 40px; line-height: 1.3em; color: #444; font-size: 1.3em; padding: 6px 12px; border-radius: 4px }
 .col { width: 300px; float: left }
 ul li { color: #fff }
-.ui-helper-hidden-accessible { display: none }
-ul { margin: 0 }
-.ui-autocomplete { width: 319px; left: 229px !important }
-.ui-menu-item { 
-position: relative;
+#decklist { background: url(../img/deck-bg.png) 0 0 no-repeat; padding: 0; margin: 0; list-style-type: none }
+#decklist li { width: 240px;
+box-shadow: #000 -1px 3px 15px;
+  border-radius: 6px;
+  position: relative }
+#decklist span.gem {
+font-size: 19px;
+text-shadow: 1px 2px 1px #000;
+padding: 0 0 0 9px;
+line-height: 29px;
 display: block;
-padding: 10px 15px;
-margin-bottom: -1px;
-background-color: #222222;
-border: 1px solid #282828;
+width: 26px;
+height: 27px;
+background: url(../img/gem.png) 0 0 no-repeat;
+position: absolute;
+z-index: 4;
+top: -2px;
+left: -6px;
 }
-.ui-menu-item:hover { 
-background: #2a9fd6;
-cursor: pointer;
-border-radius: 4px;
-}
-.ui-menu-item:hover a {
-color: #fff;
-text-decoration: none;
-}
-#decklist { padding: 0; margin: 0; list-style-type: none }
-#decklist li { width: 240px }
+
 #decklist li a { 
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 25px;
 	font-weight: 400;
-	padding: 4px 43px;
+	padding: 0 0 0 31px;
   color: #fff;
-  width: 241px;
-  height: 40px;
+  width: 231px;
+  height: 24px;
   display: block;
-  background: url(../img/card-unit.png) 0 0 no-repeat;
+  background: url(../img/cardunit.png) 0 0 no-repeat;
 }
 #decklist li a:hover { text-decoration: none }
+#decklist span.count {
+background:rgb(144, 14, 42);
+width: 20px;
+height: 24px;
+color: #fff;
+position: absolute;
+z-index: 5;
+right: 0;
+top: 0;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+line-height: 24px;
+padding: 0 0 0 5px;
+font-size: 18px;
+}

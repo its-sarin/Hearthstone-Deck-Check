@@ -4590,9 +4590,11 @@ $(document).ready(function(){
   var deck_max = 30;
   var card_max = 2;
 
+  /* @TODO split string up, follow logic for multiple cards, allow double click to add twice. add ability to "darken" card when used or lessen the amount, etc. */
+
   function add_card(event,ui){
     console.log(ui);
-    $('#decklist').append('<li style="background:url(img/cards/' + ui.item.image + '.png) 93px -85px no-repeat"><a>' + ui.item.label + '</a></li>');
+    $('#decklist').append('<li style="background:url(img/cards/' + ui.item.image + '.png) 93px -85px no-repeat"><span class="gem">' + ui.item.mana + '</span><a>' + ui.item.label + '</a><span class="count">2</span></li>');
   }
 
   $( "#autocomplete" ).autocomplete({
