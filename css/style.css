@@ -1,15 +1,52 @@
-body { background: #000; font-family: "Helvetica","Arial","sans"; color: #fff }
-h1 { margin-left: 13px }
-#mainContainer { width: 900px; margin: 0 auto }
-.well { left; background: #343434 }
-input { height: 40px; line-height: 1.3em; color: #444; font-size: 1.3em; padding: 6px 12px; border-radius: 4px }
-.col { width: 300px; float: left }
-ul li { color: #fff }
-#decklist { background: url(../img/deck-bg.png) 0 0 no-repeat; padding: 0; margin: 0; list-style-type: none }
+body {
+background: #000;
+font-family: "Helvetica","Arial","sans"; 
+color: #fff
+}
+
+h1 { 
+margin-left: 13px
+}
+
+#mainContainer {
+width: 900px;
+margin: 0 auto
+}
+
+.well {
+left; background: #343434
+}
+
+input {
+height: 40px;
+line-height: 1.3em;
+color: #444;
+font-size: 1.3em;
+padding: 6px 12px;
+border-radius: 4px
+}
+
+.col {
+width: 300px;
+float: left
+}
+
+ul li {
+color: #fff;
+cursor: pointer
+}
+
+#decklist {
+padding: 0;
+margin: 0;list-style-type: none
+}
+
 #decklist li { width: 240px;
 box-shadow: #000 -1px 3px 15px;
-  border-radius: 6px;
-  position: relative }
+border-radius: 6px;
+position: relative
+}
+
 #decklist span.gem {
 font-size: 19px;
 text-shadow: 1px 2px 1px #000;
@@ -25,18 +62,26 @@ top: -2px;
 left: -6px;
 }
 
-#decklist li a { 
-  font-size: 16px;
-  line-height: 25px;
-	font-weight: 400;
-	padding: 0 0 0 31px;
-  color: #fff;
-  width: 231px;
-  height: 24px;
-  display: block;
-  background: url(../img/cardunit.png) 0 0 no-repeat;
+#decklist li {
+background-position: 93px -85px
 }
-#decklist li a:hover { text-decoration: none }
+
+#decklist li a { 
+font-size: 16px;
+line-height: 25px;
+font-weight: 400;
+padding: 0 0 0 31px;
+color: #fff;
+width: 231px;
+height: 24px;
+display: block;
+background: url(../img/cardunit.png) 0 0 no-repeat;
+}
+
+#decklist li a:hover {
+text-decoration: none
+}
+
 #decklist span.count {
 background:rgb(144, 14, 42);
 width: 20px;

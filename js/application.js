@@ -4589,19 +4589,66 @@ $(document).ready(function(){
   
   var deck_max = 30;
   var card_max = 2;
+  var current_deck = [];
 
   /* @TODO split string up, follow logic for multiple cards, allow double click to add twice. add ability to "darken" card when used or lessen the amount, etc. */
 
   function add_card(event,ui){
-    console.log(ui);
-    $('#decklist').append('<li style="background:url(img/cards/' + ui.item.image + '.png) 93px -85px no-repeat"><span class="gem">' + ui.item.mana + '</span><a>' + ui.item.label + '</a><span class="count">2</span></li>');
+
+    count = '';
+    gem = '<span class="gem">' + ui.item.mana + '</span>';
+    label = '<a>' + ui.item.label + '</a>';
+    background = 'background-image:url(img/cards/' + ui.item.image + '.png)';
+    if($('#decklist li').index('#' + ui.item.image) == -1){
+    }
+    else {
+      $('#decklist li#' + ui.item.image).remove();
+      count = '<span class="count">2</span>';
+     
+    }
+    card = '<li id="' + ui.item.image + '" style="' + background + '">' + gem + label + count + '</li>';
+    $('#decklist').append(card); 
+   
   }
+
+  /* Remove Cards */
+  $('#decklist').on('click','li',function(){
+    if($(this).has('span.count').length) $(this).find('span.count').fadeOut();
+    else $(this).fadeOut();
+  });
 
   $( "#autocomplete" ).autocomplete({
 		source:cards,
 		select: function(event,ui){
 	    add_card(event,ui);
-		}
+    },
+    change: function(event,ui) { $('#autocomplete').val(''); }
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
